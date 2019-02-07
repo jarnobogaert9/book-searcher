@@ -1,0 +1,30 @@
+<% include partials/header.ejs %>
+
+<br>
+<% if (error) { %>
+<div class="col s12 m6">
+  <div class="card red accent-4">
+    <div class="card-content white-text">
+      <p>
+        <%= error %>
+      </p>
+    </div>
+  </div>
+</div>
+<% } %>
+
+<form action="" method="POST">
+  <div class="input-field col s12">
+    <input autofocus name="username" id="username" type="text" class="">
+    <label class="" for="username">Username</label>
+  </div>
+  <div class="input-field col s12">
+    <input name="password" id="password" type="password" class="">
+    <label class="" for="password">Password</label>
+  </div>
+  <div class="row">
+    <button class="btn waves-effect waves-light green accent-3" type="submit">Submit</button>
+  </div>
+</form>
+
+<% include partials/footer.ejs %>

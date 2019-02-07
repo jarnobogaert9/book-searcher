@@ -1,0 +1,26 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.small {
+  font-size: 10pt;
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+.book p {
+  margin: 0 0 1em 0!important;
+}

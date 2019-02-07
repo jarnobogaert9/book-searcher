@@ -1,0 +1,77 @@
+<% include partials/header.ejs %>
+
+<br>
+<% if (msg) { %>
+<div class="col s12 m6">
+  <div class="card green accent-3">
+    <div class="card-content white-text">
+      <p>
+        <%= msg %>
+      </p>
+    </div>
+  </div>
+</div>
+<% } %>
+
+<br>
+
+<form action="/add" method="POST">
+  <div class="row">
+    <div class="input-field col s4">
+      <input name="bookName" id="bookName" type="text" class="">
+      <label class="" for="bookName">Book name</label>
+    </div>
+
+
+    <div class="input-field col s4">
+      <input name="author" id="author" type="text" class="">
+      <label class="" for="author">Author</label>
+    </div>
+    
+    <div class="input-field col s4">
+      <input name="genre" id="genre" type="text" class="">
+      <label class="" for="genre">Genre</label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="input-field col s12">
+      <textarea name="description" id="description" class="materialize-textarea"></textarea>
+      <label for="description">Description</label>
+    </div>
+  </div>
+
+  <div class="row">
+    <label>
+      <input value="Very bad" class="with-gap" name="rating" type="radio" />
+      <span>Very bad</span>
+    </label>
+
+    <label>
+      <input value="Bad" class="with-gap" name="rating" type="radio" />
+      <span>Bad</span>
+    </label>
+
+    <label>
+      <input value="Average" class="with-gap" name="rating" type="radio" />
+      <span>Average</span>
+    </label>
+
+    <label>
+      <input value="Good" class="with-gap" name="rating" type="radio" />
+      <span>Good</span>
+    </label>
+
+    <label>
+      <input value="Very good" class="with-gap" name="rating" type="radio" />
+      <span>Very good</span>
+    </label>
+  </div>
+
+  <div class="row">
+    <button class="btn waves-effect waves-light purple darken-2" type="submit">Add book</button>
+  </div>
+</form>
+
+
+<% include partials/footer.ejs %>

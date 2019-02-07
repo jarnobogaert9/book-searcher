@@ -1,0 +1,25 @@
+<% include partials/header.ejs %>
+
+<br>
+
+<% for(var i = 0; i < books.length; i++) { %>
+  <div class="row">
+      <div class="col s12">
+        <div class="card blue book">
+          <div class="card-content white-text">
+            <span class="card-title"><%= books[i].book_name %></span>
+            <p><span class="bold">Author:</span> <%= books[i].book_author %></p>
+            <!-- <p><span class="bold">Description:</span> <%= books[i].book_description %></p> -->
+            <!-- <p><span class="bold">Genre:</span> <%= books[i].book_genre %></p> -->
+            <p><span class="bold">Rating:</span> <%= books[i].book_rating %></p>
+            <br>
+            <a href="book/<%= books[i].book_id %>" class="waves-effect red lighten-1 btn">More about the book</a>
+          </div>
+          <!-- <div class="card-action">
+            <a href="#">Buy book</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+<% } %>
+<% include partials/footer.ejs %>
