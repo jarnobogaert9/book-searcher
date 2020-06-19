@@ -1,11 +1,11 @@
 # Book App
-Functionallity:
-- See all books there are
-- Search for a book
-- Login as admin and add books
+Functionallities:
+- List all books
+- Search for a specific book
+- Add new books as administrator
 
-### What is used to make this project ?
-I am using Node.js and on top off that I use the Express.js framework. 
+### What did I use to make this project ?
+I used Node.js as the runtime and I used Express.js for the webserver. 
 I am storing all the data in a MySQL database.
 For the frontend am I using a template engine called EJS.
 
@@ -17,4 +17,4 @@ Modules used in this project:
 - ejs
 
 ### Why is it not working on my machine ?
-This is simple, all the books are stored in a local MySQL database. As a result you need to create a local database that you can call what you want (bookSystem is mine) with all the needed tables and rows.
+I am using a local database to store all the books so you will need to get a mysql database running if you want to test this application.
