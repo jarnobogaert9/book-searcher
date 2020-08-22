@@ -22,7 +22,7 @@ router.get('/', (req, res) => {
 router.get('/search', (req, res) => {
   res.render('search', {
     loggedIn: loggedIn,
-    founded: ''
+    found: ''
   });
 });
 
